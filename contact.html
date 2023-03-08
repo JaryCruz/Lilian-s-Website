@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="You can contact us and make your order!"
+    />
+    <title>Lilian's Kitchen | Contact</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script defer src="js/script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Nav -->
+    <nav>
+      <div class="container">
+        <a href="index.html" aria-label="Inicio">
+          <img src="img/icon.png" alt="" />
+        </a>
+
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="menu.html">Menú</a></li>
+          <li><a href="#" class="active">Contáctanos</a></li>
+        </ul>
+
+        <button class="btn-hamburger" data-btn-hamburger aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" data-mobile-menu>
+      <a href="index.html">Inicio</a>
+      <a href="menu.html">Menú</a>
+      <a href="#" class="active">Contáctanos</a>
+    </div>
+
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-info">
+          <h1>Contáctanos</h1>
+          <p>
+            Olvídate de recibir una respuesta en semanas, ¡te contactaremos lo
+            antes posible!
+          </p>
+        </div>
+        <form data-netlify="true" name="lilian-contact" action="POST">
+          <div class="input-group">
+            <input
+              id="name"
+              type="text"
+              placeholder="NOMBRE"
+              name="name"
+              autocomplete="off"
+              required
+            />
+            <input
+              type="number"
+              minlength="10"
+              maxlength="12"
+              placeholder="TELEFONO"
+              name="phone-number"
+              autocomplete="off"
+              required
+            />
+          </div>
+          <input
+            id="email"
+            type="email"
+            placeholder="EMAIL"
+            name="email"
+            autocomplete="off"
+            required
+          />
+          <textarea
+            id="message"
+            name="message"
+            placeholder="MENSAJE"
+            required
+          ></textarea>
+          <button type="submit" value="Enviar">Enviar</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue">
+      <div class="container">
+        <div>
+          <p>&copy; 2023 Lilian Kitchen</p>
+          <div class="footer-info">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>912 E Fletcher ave, Tampa Fl 33612</p>
+          </div>
+        </div>
+        <div>
+          <div class="footer-info">
+            <i class="fa-solid fa-phone"></i>
+            <p href="tel:8138502654">(813) 850-2654</p>
+          </div>
+          <div class="footer-info">
+            <i class="fa-solid fa-envelope"></i>
+            <p>ondina04-21@hotmail.com</p>
+          </div>
+        </div>
+        <div>
+          <div class="footer-info social-icons">
+            <a
+              href="https://www.facebook.com/profile.php?id=100063624782193"
+              target="_blank"
+              aria-label="facebook"
+            >
+              <i class="fa-brands fa-facebook fa-2x"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/lilians_kitchen504/"
+              target="_blank"
+              aria-label="instagram"
+            >
+              <i class="fa-brands fa-instagram fa-2x"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
