@@ -18,6 +18,8 @@ body {
   background-color: var(--white);
   font-family: 'Poppins', sans-serif;
   font-size: 17px;
+  position: relative;
+  padding-top: 105px;
 }
 
 h2 {
@@ -34,7 +36,7 @@ button {
 }
 
 section {
-  margin: 80px auto;
+  margin: 40px auto;
 }
 
 a {
@@ -66,11 +68,21 @@ ul {
 }
 
 /* Nav */
+nav {
+  position: fixed;
+  top: 0px;
+  z-index: 40;
+  width: 100%;
+  background-color: var(--white);
+  border-bottom: 1px solid var(--black);
+}
+
 nav .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 25px;
+  background-color: var(--white);
 }
 
 nav img {
@@ -104,6 +116,7 @@ ul li a:hover {
   width: 25px;
   height: 25px;
   display: flex;
+  position: relative;
   z-index: 10;
   flex-direction: column;
   align-items: center;
@@ -174,7 +187,7 @@ header {
 
 header h1 {
   color: var(--white);
-  font-size: 55px;
+  font-size: 60px;
   line-height: 1.2;
   margin: 15px auto;
   width: 75%;
@@ -200,8 +213,8 @@ header a {
   color: var(--black);
   font-weight: 600;
   font-size: 20px;
-  padding: 15px 50px;
-  border-radius: 40px;
+  padding: 10px 30px;
+  border-radius: 10px;
   text-transform: uppercase;
 }
 
@@ -215,7 +228,7 @@ header a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 30px;
+  gap: 40px;
 }
 
 .about-home-section div {
@@ -224,21 +237,23 @@ header a:hover {
 
 .about-home-section img {
   width: 50%;
-  border-radius: 30px;
+  object-fit: contain;
+  border-radius: 10px;
 }
 
 .about-home-section a {
   background-color: var(--dark-blue);
   color: var(--white);
-  padding: 10px 20px;
-  border-radius: 20px;
+  padding: 10px 30px;
+  border-radius: 10px;
   display: block;
-  width: 150px;
+  width: 170px;
   height: 50px;
   font-size: 20px;
   margin-top: 30px;
   text-transform: uppercase;
   font-weight: 500;
+  text-align: center;
 }
 
 .about-home-section a:hover {
@@ -250,7 +265,7 @@ header a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 30px;
+  gap: 40px;
   padding: 50px 30px;
   color: var(--white);
 }
@@ -260,22 +275,26 @@ header a:hover {
 }
 
 .showcase-home-section a {
-  background-color: var(--white);
-  padding: 10px 20px;
-  border-radius: 20px;
+  background-color: var(--black);
+  color: var(--white);
+  padding: 10px 30px;
+  border-radius: 10px;
   margin-top: 40px;
   display: block;
-  width: 130px;
+  width: 170px;
+  font-size: 20px;
+  text-align: center;
 }
 
 .showcase-home-section a:hover {
-  background-color: var(--black);
-  color: var(--white);
+  background-color: var(--white);
+  color: var(--black);
 }
 
 .showcase-home-section img {
   width: 100%;
-  border-radius: 20px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 /* Testimonials Section */
@@ -289,7 +308,7 @@ header a:hover {
   background: var(--dark-blue);
   color: var(--white);
   padding: 25px;
-  border-radius: 20px;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -321,7 +340,7 @@ header a:hover {
 
 /* Footer */
 footer {
-  padding: 50px 0px;
+  padding: 40px 0px;
 }
 
 footer p {
@@ -373,7 +392,7 @@ main {
 
 main h2 {
   font-size: 30px;
-  margin-top: 30px;
+  margin-top: 70px;
 }
 
 main h2:last-of-type {
@@ -392,7 +411,7 @@ main span {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
-  align-items: center;
+  align-items: end;
   gap: 35px;
 }
 
@@ -404,7 +423,8 @@ main span {
 .plate img {
   width: 100%;
   height: 275px;
-  border-radius: 30px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 /* Contact Section */
@@ -440,7 +460,7 @@ form {
 form input {
   width: 100%;
   border: 2px solid var(--black);
-  border-radius: 30px;
+  border-radius: 10px;
   padding: 20px;
   outline: none;
   height: 20px;
@@ -458,7 +478,7 @@ form textarea {
   height: 200px;
   border: 2px solid var(--black);
   padding: 20px;
-  border-radius: 30px;
+  border-radius: 10px;
   font-family: 'Poppins', sans-serif;
   font-size: 15px;
 }
@@ -468,13 +488,14 @@ form textarea:focus {
 }
 
 form button {
-  height: 55px;
+  height: 45px;
+  font-weight: 600;
   width: 150px;
   display: block;
   margin: 0 auto;
   background-color: var(--black);
   color: var(--white);
-  border-radius: 30px;
+  border-radius: 10px;
   font-size: 20px;
 }
 
@@ -502,6 +523,10 @@ form button:hover {
 }
 
 @media (max-width: 768px) {
+  body {
+    padding-top: 80px;
+  }
+
   nav .container {
     padding: 15px;
   }
@@ -512,7 +537,7 @@ form button:hover {
   }
 
   h2 {
-    font-size: 30px;
+    font-size: 35px;
   }
 
   header {
@@ -552,6 +577,7 @@ form button:hover {
 
   .about-home-section img {
     width: 100%;
+    max-width: 600px;
   }
 
   .showcase-home-section {
@@ -563,7 +589,8 @@ form button:hover {
   }
 
   .showcase-home-section img {
-    width: 80%;
+    width: 100%;
+    max-width: 600px;
     display: block;
     margin: 0 auto;
   }
