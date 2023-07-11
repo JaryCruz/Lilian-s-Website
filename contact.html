@@ -58,10 +58,9 @@
             antes posible!
           </p>
         </div>
-        <form data-netlify="true" name="lilian-contact" action="POST">
+        <form netlify name="lilian-contact">
           <div class="input-group">
             <input
-              id="name"
               type="text"
               placeholder="NOMBRE"
               name="name"
@@ -70,8 +69,6 @@
             />
             <input
               type="number"
-              min="7"
-              max="15"
               placeholder="TELEFONO"
               name="phone-number"
               autocomplete="off"
@@ -79,7 +76,6 @@
             />
           </div>
           <input
-            id="email"
             type="email"
             placeholder="EMAIL"
             name="email"
