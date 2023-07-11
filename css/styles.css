@@ -81,7 +81,7 @@ nav .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 25px;
+  height: 105px;
   background-color: var(--white);
 }
 
@@ -161,7 +161,7 @@ ul li a:hover {
   left: 0;
   background-color: var(--white);
   z-index: 5;
-  padding: 150px 0px 0px 40px;
+  padding: 120px 0px 0px 40px;
   display: none;
 }
 
@@ -523,11 +523,15 @@ form button:hover {
 
 @media (max-width: 768px) {
   body {
-    padding-top: 80px;
+    padding-top: 70px;
   }
 
   nav .container {
-    padding: 15px;
+    height: 70px;
+  }
+
+  nav img {
+    width: 100px;
   }
 
   header h1 {
@@ -540,7 +544,7 @@ form button:hover {
   }
 
   header {
-    padding: 60px 0px;
+    padding: 65px 0px;
     height: 500px;
   }
 
